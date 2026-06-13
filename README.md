@@ -85,11 +85,13 @@ Optimized for:
 ## 📂 Project Structure
 
 ```text
+
 TaskMaster-Pro/
 │
 ├── index.html
 ├── style.css
 ├── script.js
+
 ```
 
 ## 📚 Learning Outcomes
