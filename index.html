@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro - Portfolio Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="todo-card">
+            <div class="card-header">
+                <h2><b>📝 TaskMaster Pro</b></h2>
+                <div class="datetime" id="dateTime"></div>
+            </div>
+
+            <div class="task-stats">
+                <div class="stat-box">
+                    <span class="stat-emoji">✅</span>
+                    <div>
+                        <p class="stat-label">Completed</p>
+                        <span id="completedCount" class="stat-num">0</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-emoji">📌</span>
+                    <div>
+                        <p class="stat-label">Pending</p>
+                        <span id="pendingCount" class="stat-num">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graph-section" id="graphSection">
+                <p class="graph-title">Rules Matrix / Trend Analytics</p>
+                <div class="graph-container">
+                    <canvas id="analyticsGraph"></canvas>
+                    <div id="graphTooltip" class="graph-tooltip"></div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Daily Efficiency</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <div class="control-group">
+                    <input type="date" id="dueDateInput" class="date-select">
+                    
+                    <select id="priorityInput" class="priority-select">
+                        <option value="low" selected>Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button onclick="addTask()">Add</button>
+                </div>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="content">
+            <h1>Structure <br><span>Your Output</span></h1>
+            <p class="subtitle">
+                An advanced web workspace designed with custom viewport canvas data tracking, real-time index sorting parameters, structured local browser persistence, and responsive flex matrix systems.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>📊 Dynamic Priority Sorting</h4>
+                    <p>Enforces strict task-hierarchy indexes automatically arranging items by execution urgency matrix mapping.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🎯 Vector Analytics Canvas</h4>
+                    <p>Interactively tracks individual completion data nodes with high-fidelity coordinate mathematical calculations on cursor mouse tracking.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>💾 Fresh-Session Tracking</h4>
+                    <p>Session-based tracking state environments that automatically clean data logs and clear arrays upon window refresh cycles.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🎨 Premium Interface Style</h4>
+                    <p>Styled matching custom soft-lavender canvas frames layered over high contrast accessible layout components.</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <span class="badge">Dynamic Sorting Algos</span>
+                <span class="badge">HTML5 Canvas Context</span>
+                <span class="badge">CSS Variables Mapping</span>
+                <span class="badge">Session Ephemeral State</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
